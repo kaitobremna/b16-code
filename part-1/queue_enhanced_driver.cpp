@@ -5,6 +5,7 @@
 
 int main(int argc, char **argv)
 {
+    std::cout << "Running new build!\n"; // Add this line!
     // Create a queue with space for a few elements
     auto queue = Dequeue<float>(5);
 
@@ -23,6 +24,7 @@ int main(int argc, char **argv)
         std::cout << "\nEnqueued back";
         for (int i = 0; i < 3; ++i) {
             queue.enqueue(i);
+            //hello
             std::cout << ' ' << i;
         }
         std::cout << "\nDequeued back";

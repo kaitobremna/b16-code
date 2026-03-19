@@ -8,7 +8,14 @@
 template <typename T>
 void array_delete(std::vector<T> &A, std::size_t index)
 {
-    // WRITE YOUR CODE HERE
+    assert(index<= A.size());
+
+    for(int j = index;j+1<= A.size();j++)
+    {
+        A[j] = A[j+1];
+    }
+
+    A.pop_back();
 }
 
 #endif // __array_delete__
